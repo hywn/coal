@@ -1,0 +1,47 @@
+#def /===+ ([\w ]+?) ===+\n(.+?)\n---+\n(.+?)\n---/m
+<div class="pair">
+	<div class="negative text">
+		<b>@1</b>
+	</div>
+	<div class="primary text">
+		@2
+	</div>
+	<div class="secondary text">
+		@3
+	</div>
+</div>
+#fed
+#define /\\br/ <br/>
+
+<style>
+
+body { display: flex; flex-direction: column }
+.pair { display: flex; justify-content: center }
+.text { width: 32em; padding: 1em; margin-bottom: 10px }
+.primary { background-color: #eee }
+.secondary { color: #fff; font-size: 0.8em; transition-duration: 0.2s }
+.secondary:hover{ color: #222; background-color: #ddd }
+.negative { text-align: right }
+
+</style>
+
+=== introduction ===
+<h1>hi</h1>
+---
+i like cheese
+---
+
+=== how to use ===
+read some text here. if you want more details, mouse over to the right of the box to view more information.
+---
+some extra info will be here
+---
+
+=== hello ===
+hi. how are you today? i am good.
+\brhere is some text for you to read!! :)
+\bri like tacos
+---
+im actually above okay which i guess can be considered as good...\br
+i had egg for breakfast
+---
